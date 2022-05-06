@@ -19,25 +19,25 @@ public class AppointmentDataSource {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
         appointments = Stream.of(
-                new Appointment("1", "BMW",
+                new Appointment("1", "Mazda",
                         LocalDateTime.parse("2022-05-02 15:00", formatter),
                         LocalDateTime.parse("2022-05-02 15:00", formatter),
-                        new User("1", "dada", "dada", "dada.dada@gmail.com", "dadada", "mechanic")
+                        new User("1", "Pablo", "Pateu", "dada.dada@gmail.com", "Strada Lunga", "mechanic")
                 ),
                 new Appointment("2", "Audi",
                         LocalDateTime.parse("2022-05-02 15:00", formatter),
                         LocalDateTime.parse("2022-05-02 15:00", formatter),
-                        new User("2","Vlad", "Codina", "Vlad.Codina@gmail.com", "Strada Inimii", "car owner")
+                        new User("2","Costica", "Pian", "Costica.Pian@gmail.com", "Strada Bailor", "car owner")
                 ),
-                new Appointment("3", "Skoda",
+                new Appointment("3", "Renault",
                         LocalDateTime.parse("2022-05-02 15:00", formatter),
-                        LocalDateTime.parse("2022-05-02 15:00", formatter),
-                        new User("3","Ionut", "Dulla", "Ionut.Dulla@gmail.com", "Strada Kosuth Lajos", "car owner")
+                        LocalDateTime.parse("2022-05-02 16:00", formatter),
+                        new User("3","Balot", "Aurel", "Ba.Aurel@gmail.com", "Strada Strazii", "car owner")
                 ),
-                new Appointment("4", "Lada",
-                        LocalDateTime.parse("2022-05-02 15:00", formatter),
-                        LocalDateTime.parse("2022-05-02 15:00", formatter),
-                        new User("4","Emil", "Constantinescu", "Emil.Constantinescu@gmail.com", "Strada Harghitei", "mechanic")
+                new Appointment("4", "Citroen",
+                        LocalDateTime.parse("2022-05-02 16:00", formatter),
+                        LocalDateTime.parse("2022-05-02 17:00", formatter),
+                        new User("4","Fabio", "Constantinescu", "Fabio.Constantinescu@gmail.com", "Strada Brasovului", "mechanic")
                 )
         ).collect(Collectors.toList());
 
